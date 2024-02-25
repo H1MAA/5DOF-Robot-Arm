@@ -8,3 +8,4 @@ cd ..
 catkin build
 echo 'source ~/catkin_ws/devel/setup.bash' >> ~/.bashrc
 ```
+**RESTART YOUR TERMINAL AND THEN YOU CAN USE ROS WITH THIS WS**
