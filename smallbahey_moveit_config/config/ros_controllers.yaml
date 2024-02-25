@@ -1,6 +1,0 @@
-positions:
-  type: position_controllers/JointTrajectoryController
-  joints:
-    []
-  gains:
-    {}
