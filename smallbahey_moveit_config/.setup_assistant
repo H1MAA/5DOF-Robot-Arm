@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: smallbahey
+    relative_path: urdf/smallbahey.urdf
+    xacro_args: ""
+  SRDF:
+    relative_path: config/smallbahey.srdf
+  CONFIG:
+    author_name: bahey
+    author_email: small_bahey@gmail.com
+    generated_timestamp: 1706480617

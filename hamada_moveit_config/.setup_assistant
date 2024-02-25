@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: hamada6
+    relative_path: urdf/hamada6.urdf
+    xacro_args: ""
+  SRDF:
+    relative_path: config/hamada6.srdf
+  CONFIG:
+    author_name: ibraa
+    author_email: ibrahimmohamed962@gmail.com
+    generated_timestamp: 1705212227

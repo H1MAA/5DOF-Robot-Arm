@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot name="hamada6">
+    <link name="link_1">
+        <inertial>
+            <origin xyz="0.00261306737105332 0.00176360082278715 0.0246576821934029" rpy="0 0 0" />
+            <mass value="0.102051350617011" />
+            <inertia ixx="4.53483179209199E-05" ixy="-1.66441238128771E-06" ixz="9.96133751046813E-09" iyy="4.67454236866282E-05" iyz="6.7230613232731E-09" izz="8.40832800892524E-05" />
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://hamada6/meshes/link_1.STL" />
+            </geometry>
+            <material name="">
+                <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://hamada6/meshes/link_1.STL" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="link_2">
+        <inertial>
+            <origin xyz="-0.0054198177814474 -0.00713565163368579 0.0372570958666508" rpy="0 0 0" />
+            <mass value="0.107656182888474" />
+            <inertia ixx="2.98005643749831E-05" ixy="4.51259577194389E-06" ixz="-2.02176559086076E-14" iyy="3.12790794980954E-05" iyz="2.38545882667911E-14" izz="5.28046334626354E-05" />
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://hamada6/meshes/link_2.STL" />
+            </geometry>
+            <material name="">
+                <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://hamada6/meshes/link_2.STL" />
+            </geometry>
+        </collision>
+    </link>
+    <joint name="joint_1" type="revolute">
+        <origin xyz="0 0 0.0296901731651757" rpy="0 0 0.719700911690755" />
+        <parent link="link_1" />
+        <child link="link_2" />
+        <axis xyz="0 0 -1" />
+        <limit lower="0" upper="3.14" effort="0" velocity="0" />
+    </joint>
+    <link name="link_3">
+        <inertial>
+            <origin xyz="0.0423163334235897 -0.0523998100003235 -0.00879999999999903" rpy="0 0 0" />
+            <mass value="0.0370879421944392" />
+            <inertia ixx="4.31107402199934E-05" ixy="3.33899547200555E-05" ixz="3.14196283872142E-20" iyy="2.91474022387834E-05" iyz="-2.68668262957223E-20" izz="7.21036093662999E-05" />
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://hamada6/meshes/link_3.STL" />
+            </geometry>
+            <material name="">
+                <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://hamada6/meshes/link_3.STL" />
+            </geometry>
+        </collision>
+    </link>
+    <joint name="joint_2" type="revolute">
+        <origin xyz="-0.00740908206591206 0.00626063119346032 0.0425098268348305" rpy="1.5707963267949 -0.889725104086476 -0.701580737022399" />
+        <parent link="link_2" />
+        <child link="link_3" />
+        <axis xyz="0 0 1" />
+        <limit lower="0" upper="3.14" effort="0" velocity="0" />
+    </joint>
+    <link name="link_4">
+        <inertial>
+            <origin xyz="-0.0611115173353387 -0.0527057739927693 -0.00582377662014677" rpy="0 0 0" />
+            <mass value="0.101885412050416" />
+            <inertia ixx="6.23695794257442E-05" ixy="-5.77752543988617E-05" ixz="1.04470290857267E-16" iyy="7.9908667477527E-05" iyz="6.56679762413433E-16" izz="0.000126683229232314" />
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://hamada6/meshes/link_4.STL" />
+            </geometry>
+            <material name="">
+                <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://hamada6/meshes/link_4.STL" />
+            </geometry>
+        </collision>
+    </link>
+    <joint name="joint_3" type="revolute">
+        <origin xyz="0.085131998178969 -0.104773770028839 0" rpy="0 0 -0.0517082154976768" />
+        <parent link="link_3" />
+        <child link="link_4" />
+        <axis xyz="0 0 1" />
+        <limit lower="0" upper="3.14" effort="0" velocity="0" />
+    </joint>
+    <link name="link_5">
+        <inertial>
+            <origin xyz="-0.0129199786418717 -0.0351360790165315 -0.00789373945016625" rpy="0 0 0" />
+            <mass value="0.0188771162900397" />
+            <inertia ixx="4.36784009094124E-06" ixy="-3.42805424787844E-07" ixz="7.16150885936188E-09" iyy="2.9410068773853E-06" iyz="4.32546241726917E-08" izz="1.94038512846246E-06" />
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://hamada6/meshes/link_5.STL" />
+            </geometry>
+            <material name="">
+                <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://hamada6/meshes/link_5.STL" />
+            </geometry>
+        </collision>
+    </link>
+    <joint name="joint_4" type="revolute">
+        <origin xyz="-0.12211 -0.10555 0" rpy="0 0 0.88441" />
+        <parent link="link_4" />
+        <child link="link_5" />
+        <axis xyz="0 0 1" />
+        <limit lower="-3.14" upper="0" effort="0" velocity="0" />
+    </joint>
+    <link name="link_6">
+        <inertial>
+            <origin xyz="1.04083408558608E-17 1.11022302462516E-16 0.0157337325896775" rpy="0 0 0" />
+            <mass value="0.0108008005786752" />
+            <inertia ixx="1.55920828038824E-06" ixy="3.93737971575241E-22" ixz="2.60019055677216E-22" iyy="3.21670063590669E-06" iyz="4.63221143029695E-23" izz="1.82515770809202E-06" />
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://hamada6/meshes/link_6.STL" />
+            </geometry>
+            <material name="">
+                <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://hamada6/meshes/link_6.STL" />
+            </geometry>
+        </collision>
+    </link>
+    <joint name="joint_5" type="revolute">
+        <origin xyz="-0.0194964326657436 -0.0595960887898847 0.00350000000000272" rpy="1.57079632679489 -0.0137910447247329 -0.164077877210891" />
+        <parent link="link_5" />
+        <child link="link_6" />
+        <axis xyz="0 0 -1" />
+        <limit lower="0" upper="3.14" effort="0" velocity="0" />
+    </joint>
+    <transmission name="trans_joint_1">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="joint_1">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="joint_1_motor">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <transmission name="trans_joint_2">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="joint_2">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="joint_2_motor">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <transmission name="trans_joint_3">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="joint_3">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="joint_3_motor">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <transmission name="trans_joint_4">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="joint_4">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="joint_4_motor">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <transmission name="trans_joint_5">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="joint_5">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="joint_5_motor">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <gazebo>
+        <plugin name="gazebo_ros_control">
+            <robotNamespace>/</robotNamespace>
+        </plugin>
+    </gazebo>
+</robot>
+
